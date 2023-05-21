@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/perfil.css">
+	<title>Home</title>
+</head>
+<header>
+	<div class="logo">
+		<img src="../img/unnamed.png" alt="Logo">
+
+	</div>
+	<div class="profile">
+		<a href="#">
+			<button onclick='perfil()'><img src="../img/bandeiradobrasil-cke.webp"></button>
+		</a>
+		<button onclick='sair()'> Sair </button>
+	</div>
+</header>
+
+<div class="navigation">
+	<a href="#">Página de Eventos</a>
+	<a href="#">Página de Tickets</a>
+	<a href="#">Cadastro de Ticket</a>
+	<a href="#">Cadastro de Evento</a>
+</div>
+
+<body>
+
+	<div class="container light-style flex-grow-1 container-p-y">
+		<h4 class="font-weight-bold py-3 mb-4">
+		  Account settings
+		</h4>
+		<hr class="border-light m-0">
+		<div class="card-body">
+		  <div class="form-group">
+			<label class="form-label">Username</label>
+			<input type="text" class="form-control mb-1" id="usernameInput">
+		  </div>
+		  <div class="form-group">
+			<label class="form-label">Name</label>
+			<input type="text" class="form-control" id="nameInput">
+		  </div>
+		  <div class="form-group">
+			<label class="form-label">Account Type</label>
+			<select class="custom-select" id="accountTypeSelect">
+			  <option value="produtor">Produtor</option>
+			  <option value="cliente">Cliente</option>
+			</select>
+		  </div>
+		</div>
+	  </div>
+	  <div id="dadosUsuario"></div>
+	  <script src="../js/index.js"></script>
+	  <script src="../js/cadastro.js"></script>
+	  </body>
+	  </html>
+	
+	
